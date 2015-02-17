@@ -1,0 +1,20 @@
+<head>
+  <title>draggie-test</title>
+  <script src="lib/draggability.js" type="text/javascript" charset="utf-8"></script>
+  <script src="//code.jquery.com/jquery-2.1.3.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+  <div style="width:100px;height:100px;background:rgba(200,0,0,0.5);"></div>
+
+  <script>
+    var div = $('div')
+  
+    var draggie = new Draggabilly(div.get(0));
+
+    div.click(function() {
+      alert('clicked!')
+    })
+    
+  </script>
+</body>
